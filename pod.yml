@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-server
+  labels:
+    app: node-server
+spec:
+  containers:
+    - name: node-server
+      image: nhsneto/server_node:1.0
+      ports:
+        - containerPort: 3000
